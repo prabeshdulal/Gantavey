@@ -42,6 +42,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.3.10
   smooth_page_indicator: ^1.1.0
+  iconsax: ^0.0.8
 
   get: ^4.6.6
   get_storage: ^2.1.1
