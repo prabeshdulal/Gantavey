@@ -22,12 +22,6 @@ class LandingPage extends StatelessWidget {
                       width: 50,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          image: const DecorationImage(
-                              fit: BoxFit.fitHeight,
-                              image: AssetImage(
-                                  "assets/images/icons/1.png" // Assuming the image is in the assets/images directory
-                              )
-                          )
                       ),
                     ),
                     Column(
