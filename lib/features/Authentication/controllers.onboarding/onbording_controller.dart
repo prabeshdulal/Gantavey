@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gantabya/features/Authentication/screens/login.dart';
+import 'package:gantabya/features/Authentication/screens/loginPage.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {
