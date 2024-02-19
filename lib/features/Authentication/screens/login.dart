@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gantabya/features/Authentication/screens/landingPage.dart';
 import 'package:gantabya/utils/constants/iimage_strings.dart';
 import 'package:gantabya/utils/constants/text_string.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginPage extends StatelessWidget {
@@ -98,7 +101,7 @@ class LoginPage extends StatelessWidget {
       width: double.infinity,
       height: 50,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: ()=> Get.to(()=>const LandingPage()),
         child: Text(
           'Sign In',
           style: TextStyle(fontSize: 18, color: Colors.white),
@@ -119,7 +122,8 @@ class LoginPage extends StatelessWidget {
       width: double.infinity,
       height: 50,
       child: OutlinedButton(
-        onPressed: () {},
+        onPressed: (){},
+
         child: Text(
           'Create Account',
           style: TextStyle(
