@@ -137,13 +137,13 @@ class HomePage extends StatelessWidget {
               child:const Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  ServiceButton(image: AssetImage("assets/images/icons/destination.jpg"), text1: 'Destination',),
+                  ServiceButton(image: AssetImage("assets/images/icons/guide.jpg"), text1: 'Guide',),
                   Gap(5),
-                  ServiceButton(image: AssetImage("assets/images/icons/luggage.jpg"), text1: 'Luggage',),
+                  ServiceButton(image: AssetImage("assets/images/icons/hotel.png"), text1: 'Cost Estimation',),
                   Gap(5),
-                  ServiceButton(image: AssetImage("assets/images/icons/car.jpg"), text1: 'Vehicle',),
+                  ServiceButton(image: AssetImage("assets/images/icons/luggage.jpg"), text1: 'Travel Gear',),
                   Gap(5),
-                  ServiceButton(image: AssetImage("assets/images/icons/money.jpg"), text1: 'Cost Estimation',)
+                  ServiceButton(image: AssetImage("assets/images/icons/group.jpg"), text1: 'Group Members',),
                 ],
               )
           )
