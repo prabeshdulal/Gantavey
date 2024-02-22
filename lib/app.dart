@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return const GetMaterialApp(
         debugShowCheckedModeBanner: false,
       home: OnboardingScreens(),
+     // color: Colors.teal,
     );
   }
 }
