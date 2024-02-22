@@ -13,5 +13,8 @@ class Styles{
   static Color teal = Colors.teal;
 }
 
+class CoLor{
+  static TextStyle txtstyle = TextStyle(color: Styles.primarygreen, fontSize: 16,fontWeight: FontWeight.w600);
+}
 
 const kAnimationDuration = Duration(milliseconds: 200);
