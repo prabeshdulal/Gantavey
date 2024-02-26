@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   ServiceButton(image: AssetImage("assets/images/icons/guide.jpg"), text1: 'Guide',),
                   Gap(5),
-                  ServiceButton(image: AssetImage("assets/images/icons/hotel.png"), text1: 'Cost Estimation',),
+                  ServiceButton(image: AssetImage("assets/images/icons/Hotel.png"), text1: 'Hotel',),
                   Gap(5),
                   ServiceButton(image: AssetImage("assets/images/icons/luggage.jpg"), text1: 'Travel Gear',),
                   Gap(5),
