@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gantabya/features/Authentication/screens/add_destination.dart';
+import 'package:gantabya/features/Authentication/screens/emergency_contacts.dart';
 import 'package:gantabya/features/Authentication/screens/home_page.dart';
 
 class HomeBottomBar extends StatefulWidget {
@@ -14,8 +16,8 @@ class _HomePageState extends State<HomeBottomBar> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    Text('Page 2'),
-    Text('Page 3'),
+    AddDestination(),
+    EmergencyContacts(),
   ];
 
   void _onItemTapped(int index) {
@@ -39,12 +41,12 @@ class _HomePageState extends State<HomeBottomBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
+            icon: Icon(Icons.add),
+            label: 'Add Destination',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
+            icon: Icon(Icons.contact_emergency_rounded),
+            label: 'Emergency',
           ),
         ],
       ),

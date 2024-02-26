@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:gantabya/features/Authentication/screens/home_bottom_bar.dart';
 import 'package:gantabya/features/Authentication/screens/landingPage.dart';
 import 'package:gantabya/utils/constants/iimage_strings.dart';
 import 'package:gantabya/utils/constants/text_string.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
+
+import 'home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key});

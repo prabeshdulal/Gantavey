@@ -1,6 +1,13 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:gantabya/features/Authentication/screens/bhaktapur_description.dart';
+import 'package:gantabya/features/Authentication/screens/destination_view.dart';
+import 'package:gantabya/features/Authentication/screens/home_page.dart';
 import 'package:gantabya/utils/constants/colors.dart';
+import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -114,49 +121,28 @@ class _LandingPageState extends State<LandingPage>
                 ),
               ),
               SizedBox(height: 20),
+             Container(
+               padding: EdgeInsets.only(left: 20),
+               child: Text(
+                   "Destinations To Explore.",
+                 style: TextStyle(
+                   fontSize: 25
+                 )
+               ),
+             ),
               Container(
-                child: TabBar(
-                  controller: _tabController,
-                  labelColor: Colors.teal,
-                  indicatorSize: TabBarIndicatorSize.label,
-                  tabs: [
-                    Tab(text: "Places",),
-                    Tab(text: "place",),
-                    Tab(text: "place...........",),
+                padding: EdgeInsets.only(left: 20, right: 20),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      DestinationView(image1: "assets/images/placesImage/kathmandu.png", text: "Kathmandu",),
+                      const Gap(8),
+                      DestinationView(image1: "assets/images/placesImage/lalitpur.png", text: "Lalitpur",),
+                      const Gap(8),
+                      DestinationView(image1: "assets/images/placesImage/bhaktapur.png", text: "Bhaktapur", page: BKTDescription(),)
                   ],
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.only(left: 20),
-                height: 300,
-                width: double.maxFinite,
-                child: TabBarView(
-                  controller: _tabController,
-                  children: [
-                    ListView.builder(
-                      itemCount: 3,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (BuildContext context, int index) {
-                        return Container(
-                          margin: const EdgeInsets.only(right: 15, top: 10),
-                          height: 300,
-                          width: 200,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.white,
-                            image: DecorationImage(
-                              image: AssetImage(
-                                "assets/images/placesImage/gosaikunda.jpg",
-                              ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                    Text("there"),
-                    Text("k xa vaiii"),
-                  ],
+                  ),
                 ),
               ),
               SizedBox(height: 30),
@@ -269,7 +255,7 @@ class _LandingPageState extends State<LandingPage>
                           ),
                           Container(
                             child: Text(images.values.elementAt(index)),
-                          )
+                          ),
                         ],
                       ),
                     );

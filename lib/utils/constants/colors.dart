@@ -15,6 +15,8 @@ class Styles{
 
 class CoLor{
   static TextStyle txtstyle = TextStyle(color: Styles.primarygreen, fontSize: 16,fontWeight: FontWeight.w600);
+  static TextStyle txtstyle2 = TextStyle(color: Styles.greenshede1, fontSize: 25,fontWeight: FontWeight.w600);
+  static TextStyle txtstyle3 = TextStyle(color: Styles.greenshede0, fontSize: 14,fontWeight: FontWeight.w600);
 }
 
 const kAnimationDuration = Duration(milliseconds: 200);
