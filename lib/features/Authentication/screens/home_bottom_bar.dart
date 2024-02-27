@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gantabya/features/Authentication/screens/add_destination.dart';
 import 'package:gantabya/features/Authentication/screens/emergency_contacts.dart';
 import 'package:gantabya/features/Authentication/screens/home_page.dart';
+import 'package:gantabya/features/Authentication/screens/timeline.dart';
 
 class HomeBottomBar extends StatefulWidget {
   const HomeBottomBar({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomeBottomBar> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    AddDestination(),
+    Timeline(),
     EmergencyContacts(),
   ];
 
@@ -41,8 +41,8 @@ class _HomePageState extends State<HomeBottomBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add),
-            label: 'Add Destination',
+            icon: Icon(Icons.timelapse),
+            label: 'Timeline',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.contact_emergency_rounded),
