@@ -79,6 +79,7 @@ flutter:
      - assets/images/on_boarding_images/
      - assets/logos/
      - assets/images/placesImage/
+     - assets/images/unexplored/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
