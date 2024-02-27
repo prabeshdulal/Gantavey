@@ -47,7 +47,7 @@ class DestinationView extends StatelessWidget {
                 bottomLeft: Radius.circular(20),
                 bottomRight: Radius.circular(20),
               ),
-              color: Styles.greenshede0,
+              color: Styles.teal,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,6 +62,7 @@ class DestinationView extends StatelessWidget {
                     text,
                     style: TextStyle(
                       fontSize: 20,
+                      color: Colors.white,
                     ),
                   ),
                 ),
