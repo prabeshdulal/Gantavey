@@ -13,7 +13,7 @@ class BKTDescription extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Styles.bgcolor,
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,12 +85,12 @@ class BKTDescription extends StatelessWidget {
 
           child: ElevatedButton(
             onPressed: () => Get.to(() => const HomeBottomBar()),
-            child: Text("Let's Go--->",style: TextStyle(
-                color: Colors.black,
-            ),),
             style: ElevatedButton.styleFrom(
-              primary: Colors.teal, // Change button color here
+              backgroundColor: Colors.teal, // Change button color here
             ),
+            child: const Text("Let's Go--->",style: TextStyle(
+              color: Colors.black,
+            ),),
           ),
         ),
       ),
