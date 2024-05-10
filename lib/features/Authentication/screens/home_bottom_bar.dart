@@ -6,6 +6,7 @@ import 'package:gantabya/features/Authentication/screens/group_screen.dart';
 import 'package:gantabya/features/Authentication/screens/timeline.dart';
 import 'package:gantabya/features/Authentication/screens/emergency_contacts.dart';
 import 'package:gantabya/features/Authentication/screens/home_page.dart';
+import 'package:gantabya/features/Authentication/screens/timeline.dart';
 
 class HomeBottomBar extends StatefulWidget {
   const HomeBottomBar({Key? key}) : super(key: key);
@@ -43,7 +44,7 @@ class _HomePageState extends State<HomeBottomBar> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Home'
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.timeline),
